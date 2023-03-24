@@ -1,15 +1,11 @@
 let totalLikes = 0;
 let fotosMenosDe10 = 0;
-
 let cantidadFotos = null;
+
 while (cantidadFotos === null) {
-    try {
     cantidadFotos = parseInt(prompt("Ingrese la cantidad de fotos"));
     if (isNaN(cantidadFotos)) {
-    throw new Error("Caracteres no válidos");
-    }
-    } catch (e) {
-    console.error(e.message);
+    console.error("Caracteres no válidos");
     cantidadFotos = null;
     }
 }
@@ -17,13 +13,9 @@ while (cantidadFotos === null) {
 for (let i = 1; i <= cantidadFotos; i++) {
     let likes = null;
     while (likes === null) {
-    try {
-        likes = parseInt(prompt("Ingrese la cantidad de likes en la foto " + i));
-        if (isNaN(likes)) {
-        throw new Error("Caracteres no válidos");
-        }
-    } catch (e) {
-        console.error(e.message);
+    likes = parseInt(prompt("Ingrese la cantidad de likes en la foto " + i));
+    if (isNaN(likes)) {
+        console.error("Caracteres no válidos");
         likes = null;
     }
     }
