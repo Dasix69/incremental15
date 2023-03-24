@@ -1,10 +1,10 @@
 let usuario = prompt("¿Quién está ahí?", "");
 
-if (usuario == "Admin") {
+if (usuario == "David") {
 
     let contraseña = prompt("Contraseña?", "");
 
-        if (contraseña == "TheMaster") {
+        if (contraseña == "dasix") {
             alert("Bienvenido!");
         } else if (contraseña == "" || contraseña == null) {
             alert("Cancelado.");
